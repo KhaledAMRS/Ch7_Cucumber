@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="30.161" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="testing signup functionality" name="user could create new account with valid data (positive scenario)" time="10.818">
+<system-out><![CDATA[
+Given user navigate to home page............................................passed
+And user go to register page................................................passed
+When user select gender.....................................................passed
+And user enter valid firstname "khaled" and "ramadan" lastname..............passed
+And user choose date of birth day "2" month "March" year "1992".............passed
+And user enter valid email..................................................passed
+And mark on Newletters checkbox.............................................passed
+And user enter password "P@ssw0rd" & confirm password "P@ssw0rd"............passed
+And user click on Register btn..............................................passed
+Then new account is created successfully....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="testing login functionality" name="user could login with valid credentials" time="9.706">
+<system-out><![CDATA[
+Given user navigate to home page............................................passed
+And user go to login page...................................................passed
+When user enter valid email and password in login page......................passed
+And user click on loginBtn..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="testing login functionality" name="user could login with invalid credentials" time="9.45">
+<system-out><![CDATA[
+Given user navigate to home page............................................passed
+And user go to login page...................................................passed
+When user enter valid email and password in login page......................passed
+And user click on loginBtn..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
